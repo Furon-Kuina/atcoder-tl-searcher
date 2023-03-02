@@ -2,7 +2,12 @@
 	"manifest_version": 3,
 	"name": "atcoder-tl-searcher",
 	"version": "1.0",
-	"description": "AtCoderの問題ページに、コンテスト直後のAtCoder TLへのリンクを追加します。",
+	"description": "AtCoderの問題ページにコンテスト直後のAtCoderTLへのリンクを追加します。",
+  "icons": {
+    "16" : "icon/tegami_bird.png",
+    "48" : "icon/tegami_bird.png",
+    "128" : "icon/tegami_bird.png"
+  },
   "content_scripts": [{
     "matches":[
       "https://atcoder.jp/contests/*"
@@ -12,5 +17,6 @@
   "web_accessible_resources": [{
     "resources": ["icon/*", "bootstrap.min.js.map"],
     "matches": ["<all_urls>"]
-  }]
+  }], 
+  "permissions": ["storage"]
 }
